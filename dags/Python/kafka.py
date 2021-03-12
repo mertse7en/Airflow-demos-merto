@@ -18,7 +18,7 @@ def kafka_push(**kwargs):
     # ------------------------------------------------------------------------------------------------------------------------------------------------------------
     # Kafka Part
     topic_name = "airflow-test"
-    conf = {'bootstrap.servers':["10.90.214.198:9092,10.90.214.199:9092,10.90.214.201:9092"],
+    conf = {'bootstrap.servers':["--------------------------"],
             'client.id':socket.gethostname()}
 
     print("topic_name :{}".format(topic_name))
