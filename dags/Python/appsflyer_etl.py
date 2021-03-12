@@ -12,7 +12,7 @@ def etl_function(**kwargs):
     ti = kwargs['ti']
 
     logging.info('Hello')
-    api_token = '398605a1-1356-4b82-ab0d-1c5485028ad1'
+    api_token = 
     
 
     today = datetime.datetime.now()
@@ -21,11 +21,11 @@ def etl_function(**kwargs):
     start_date = str(from_day).split(' ')[0]
     end_date = str(today).split(' ')[0]
 
-    params = {'api_token':'398605a1-1356-4b82-ab0d-1c5485028ad1',
+    params = {'api_token':'',
                 'from': start_date,
                 'to': end_date}
 
-    request_url = 'https://hq.appsflyer.com/export/id1489293379/installs_report/v5?api_token=398605a1-1356-4b82-ab0d-1c5485028ad1&from=2021-02-02&to=2021-02-25&timezone=Europe%2fIstanbul'
+    request_url = 
     
     res = requests.request('GET', request_url)
     if res.status_code != 200:
